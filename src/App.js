@@ -14,7 +14,7 @@ const App = () => {
   return (
     <>
       <div className="title">
-        <h1>Dynamic Content Website</h1>
+        <h1>Dynamic Greeting Website</h1>
       </div>
       <div className="help">
         <h4><a href="">Need Help?</a></h4><br />
