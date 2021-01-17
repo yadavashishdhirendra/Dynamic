@@ -1,13 +1,152 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: violet;
+}
+
+.heading {
+  text-align: center;
+  transform: translateY(50px);
+}
+
+h1 {
+  line-height: 3rem;
+  color: white;
+  text-shadow: 0px 4px 8px black;
+}
+
+.input {
+  text-align: center;
+  line-height: 3rem;
+  transform: translateY(55px);
+}
+
+#inp {
+  width: 30%;
+  line-height: 2rem;
+  font-size: 1.33rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s ease-in-out;
+  outline: none;
+  color: rgb(54, 53, 53);
+  text-align: center;
+}
+
+input:focus {
+  border: 2px solid yellow;
+}
+
+.btns {
+  text-align: center;
+  transform: translateY(60px);
+  line-height: 3rem;
+}
+
+.btn {
+  padding: 8px 17px;
+  font-size: 1.12rem;
+  background-color: yellow;
+  border: 3px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  text-shadow: 0px 4px 8px red;
+}
+
+.btn:hover {
+  transition: 0.5s ease-in;
+  background-color: white;
+  border: 3px solid yellow;
+}
+
+@media (min-width: 600px) {
+  #inp {
+    width: 34%;
+  }
+}
+
+@media (max-width: 600px) {
+  #inp {
+    width: 95%;
+    padding: 4px;
+  }
+}
+
+
+.title{
+  text-align: center;
+  background-color: yellow;
+}
+
+.help{
+  text-align: center;
+  text-align: justify;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  color: black;
+}
+
+.instructions{
+  text-align: center;
+  text-align: justify;
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  color: black;
+}
+
+
+@media (min-width: 600px) {
+  .help {
+    width: 34%;
+  }
+}
+
+@media (max-width: 600px) {
+  .help {
+    width: 95%;
+    padding: 4px;
+  }
+}
+
+@media (min-width: 600px) {
+  .instructions {
+    width: 34%;
+  }
+}
+
+@media (max-width: 600px) {
+  .instructions {
+    width: 95%;
+    padding: 4px;
+  }
+}
+
+.footer_items{
+  background-color: black;
+  margin-top: 25px;
+}
+
+ul li{
+  display: inline-flex;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+  padding: 1px 55px;
+  color: white;
 }
